@@ -1,0 +1,10 @@
+1. Use uma biblioteca de estrutura de teste C ++, como CxxTest, Boost.Test ou googletest. Isso o ajudará a estruturar seus testes.
+2. Adicione um ou mais testes para cada nova funcionalidade, não importa quão pequena seja a funcionalidade adicionada.
+3. Torne os testes definitivos - eles devem ser aprovados ou reprovados. No entanto, tome cuidado com as tolerâncias de ponto flutuante e permita erros de arredondamento nos cálculos.
+4. Lembre-se de escrever testes para casos extremos. Estas são entradas de teste que podem ser raras, mas podem causar problemas - triângulos colineares, matrizes singulares, o número complexo 0 + 0i etc.
+5. Em vez de distribuir os parâmetros de entrada de teste de maneira aleatória ou uniforme, é mais eficiente se concentrar na fronteira entre os tipos de entrada. Por exemplo, se um teste de entrada p é suposto
+    ser uma probabilidade (0 ≤ p ≤ 1), então verifique se p = 1 fornece a resposta correta, mas que p = 1,0001 fornece um erro.
+6. Reveja seus testes de vez em quando. Adicione novos testes conforme necessário e remova apenas aqueles que você sabe que são redundantes.
+7. Automatize seu teste, para que você não tenha que se lembrar de executar os testes ou de verificar os resultados.
+
+http://cxxtest.com/guide.html
