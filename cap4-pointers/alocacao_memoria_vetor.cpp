@@ -9,11 +9,10 @@ int main(int argc, char* argv[]){
         A[i] = new double [cols];
     }
 
-    /* desalocar a matrix
+   //desalocar a matrix
     for (int i=0; i<rows; i++){
         delete[] A[i];
     }
     delete[] A;
-    */
     return 0;
 }
